@@ -37,6 +37,7 @@
               <td>{{$custms->email}}</td>
               <td>{{$custms->country}}</td>
               <td><a href="{{route('delete',['id'=>$custms->id])}}"  class="btn btn-danger">delete</a><td>
+                <td><a href="{{route('edit',['id'=>$custms->id])}}"  class="btn btn-success">edit</a><td> 
 
              
             </tr>

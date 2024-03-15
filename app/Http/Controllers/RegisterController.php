@@ -8,6 +8,9 @@ use App\Models\Register;
 class RegisterController extends Controller
 {
     public function index(){
+        // $url = url('register');
+        // $data = compact('url');
+        // return view ('Register')->with($data);
 
         return view('register');
     }
