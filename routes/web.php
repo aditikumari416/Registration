@@ -3,8 +3,10 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\FormController;
+use App\Http\Controllers\TodoController;
 use App\Models\Register;
 use App\Models\Form;
+use App\Models\todo;
 
 /*
 |--------------------------------------------------------------------------
@@ -53,3 +55,9 @@ Route::get('/delete/{id}',[FormController::class,'delete'])->name('delete');
 Route::get('/edit/{id}',[FormController::class,'edit'])->name('edit');
 Route::post('/update/{id}',[FormController::class,'update'])->name('update');
 // Route::get('/submitupdate/{id}',[FormController::class,'submitupdate'])->name('submitupdate');
+
+
+//todo list route
+
+Route::get('/todoview',[TodoController::class,'todoview'])->name('todoview');
+Route::post('/todoview',[TodoController::class,'submit'])->name('submit');

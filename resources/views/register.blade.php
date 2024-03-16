@@ -13,6 +13,7 @@
 </head>
 <body>
     <form action="{{$url}}" method="POST">
+      {{-- <form action="{{$url}}" method="POST"> --}}
       @csrf
         <div class="container">
           <h1>{{$title}}</h1>
