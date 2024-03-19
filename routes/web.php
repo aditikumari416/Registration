@@ -50,7 +50,7 @@ Route::get('/navbar',[FormController::class,'nav']);
 //     });
 
 Route::get('/register',[FormController::class, 'registerform'])->name('register');
-Route::get('/customer/view', [FormController::class,'view'])->name('view');
+Route::get('/customer/view', [FormController::class,'view'])->name('customerview');
 Route::get('/delete/{id}',[FormController::class,'delete'])->name('delete');
 Route::get('/edit/{id}',[FormController::class,'edit'])->name('edit');
 Route::post('/update/{id}',[FormController::class,'update'])->name('update');
@@ -61,3 +61,14 @@ Route::post('/update/{id}',[FormController::class,'update'])->name('update');
 
 Route::get('/todoview',[TodoController::class,'todoview'])->name('todoview');
 Route::post('/todoview',[TodoController::class,'submit'])->name('submit');
+Route::get('/showdata',[TodoController::class,'view'])->name('view');
+
+
+//route of upload
+
+Route::get('/upload',function(){
+
+    return view('upload');
+});
+
+Route::post('/upload',[TodoController::class,'upload']);

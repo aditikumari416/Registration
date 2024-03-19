@@ -18,8 +18,8 @@ class RegisterController extends Controller
 
     public function submit(Request $request){
 
-         echo '<pre>';
-        print_r($request->all());
+        //  echo '<pre>';
+        // print_r($request->all());
 
         //insert query of data basetable
 

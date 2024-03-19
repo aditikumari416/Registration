@@ -28,6 +28,21 @@
 
             <a href="{{route('register')}}" class="btn btn-primary"> Add</a>
 
+            <br>
+            <form action="">
+                <div class="form-group">
+
+                   
+                    <input class="search" placeholder="search here" class="form-control"  id="" name="search" value="{{$search}}">
+                    <button class="btn btn-primary">search</button>
+                    <a href="{{route('customerview')}}">
+                        <button class="btn btn-danger" type="button">reset</button>
+                    </a>
+                    
+                </div>
+
+            </form>
+
             @foreach ( $custm as $custms )
                 
             

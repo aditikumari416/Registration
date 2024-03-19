@@ -20,18 +20,18 @@
           {{-- <p>Please fill in this form to create an account.</p> --}}
           <hr>
           <label for="email"><b>name</b></label>
-          <input type="text" placeholder="Enter name" name="name" id="name" value="{{$custom->name}}" required>
+          <input type="text" placeholder="Enter name" name="name" id="name" value="" required>
       
       
           <label for="email"><b>Email</b></label>
-          <input type="text" placeholder="Enter Email" name="email" id="email" value="{{$custom->email}}" required>
+          <input type="text" placeholder="Enter Email" name="email" id="email" value="" required>
       
           <label for="psw"><b>Password</b></label>
           <input type="password" placeholder="Enter Password" name="password" id="psw" required>
           
       
           <label for="psw-repeat"><b>country</b></label>
-          <input type="country" placeholder="country" name="country" id="country" value="{{$custom->country}}" required>
+          <input type="country" placeholder="country" name="country" id="country" value="" required>
           <label for="psw-repeat"><b>date</b></label>
           <input type="date" placeholder="date" name="date" id="date" required>
           <hr>

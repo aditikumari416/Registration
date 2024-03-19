@@ -31,14 +31,25 @@ class FormController extends Controller
         return view ('Register')->with($data);
     }
 
-    public function view(){
+    public function view( Request $request){
        
-        $custm = Register::all();
+        $search =  $request['search']?? "";
+
+        if($search!= ""){
+            //where close
+
+            $custm = Register::where('name', 'LIKE',"%$search%")->orWhere('email','LIKE',"%$search%")->get();
+
+        }else{
+
+            
+            $custm = Register::all();
+        }
         // echo '<pre>';
         // print_r($custm->toArray());
         // echo '<pre>';
 
-        $data = compact('custm');
+        $data = compact('custm','search');
       return view('customer-view')->with($data);
     }
 
