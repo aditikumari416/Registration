@@ -20,6 +20,19 @@ class FormController extends Controller
         return view('navbar');
     }
 
+    // public function submit(Request $request){
+    //     // echo '<pre>';
+    //     // print_r($request->all());
+    
+    //     $list= new register;
+    //     $list->name = $request['name'];
+        
+    //     $list->save();
+    
+        
+    //     return view('showdata');
+    //    }
+
 
     public function registerform(){
 
@@ -30,6 +43,9 @@ class FormController extends Controller
         $data = compact('url','title','titles');
         return view ('Register')->with($data);
     }
+
+  
+
 
     public function view( Request $request){
        
@@ -45,6 +61,8 @@ class FormController extends Controller
             
             $custm = Register::all();
         }
+
+        // $custm = Register::get();
         // echo '<pre>';
         // print_r($custm->toArray());
         // echo '<pre>';
@@ -64,6 +82,7 @@ class FormController extends Controller
 
         return redirect('register');
     }
+    
 
 
     public function edit($id){
@@ -85,6 +104,9 @@ class FormController extends Controller
         }
         
     }
+
+
+    
 
 
     public function update($id , Request $request){

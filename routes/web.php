@@ -50,6 +50,7 @@ Route::get('/navbar',[FormController::class,'nav']);
 //     });
 
 Route::get('/register',[FormController::class, 'registerform'])->name('register');
+// Route::post('/registersubmit',[FormController::class,'submit'])->name('submit');
 Route::get('/customer/view', [FormController::class,'view'])->name('customerview');
 Route::get('/delete/{id}',[FormController::class,'delete'])->name('delete');
 Route::get('/edit/{id}',[FormController::class,'edit'])->name('edit');

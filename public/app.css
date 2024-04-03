@@ -1,68 +1,68 @@
 * {
    
-    box-sizing: border-box;
-    /* background-color: red; */
-  }
-  
-  /* Add padding to containers */
-  .container {
-    padding: 16px;
-  }
-  
-  /* Full-width input fields */
-  input[type=text], input[type=password] {
-    width: 500px;
-    padding: 15px;
-    margin: 5px 0 22px 0;
-    display: inline-block;
-    border: none;
-    background: #f1f1f1;
-  }
-  
-  input[type=text]:focus, input[type=password]:focus {
-    background-color: #ddd;
-    outline: none;
-  }
-  
-  /* Overwrite default styles of hr */
-  hr {
-    border: 1px solid #f1f1f1;
-    margin-bottom: 25px;
-  }
-  
-  /* Set a style for the submit/register button */
-  .registerbtn {
-    background-color: #04AA6D;
-    color: white;
-    padding: 16px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    opacity: 0.9;
-  }
-  
-  .registerbtn:hover {
-    opacity:1;
-  }
-  
-  /* Add a blue text color to links */
-  a {
-    color: dodgerblue;
-  }
-  
-  /* Set a grey background color and center the text of the "sign in" section */
-  .signin {
-    background-color: #f1f1f1;
-    text-align: center;
-  }
-  
-  
-  /* 
-  .image{
-  
-    border: 10px solid red;
-  } */
+  box-sizing: border-box;
+  /* background-color: red; */
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 500px;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit/register button */
+.registerbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity:1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+
+/* 
+.image{
+
+  border: 10px solid red;
+} */
 
 
 
@@ -75,121 +75,131 @@
 
 
 
-  /* /////todo css */
+/* /////todo css */
 
-  
+
 body {
-  margin: 0;
-  min-width: 250px;
+margin: 0;
+min-width: 250px;
 }
 /* Remove margins and padding from the list */
 ul {
-  margin: 0;
-  padding: 0;
+margin: 0;
+padding: 0;
 }
 
 /* Style the list items */
 ul li {
-  cursor: pointer;
-  position: relative;
-  padding: 12px 8px 12px 40px;
-  list-style-type: none;
-  background: #eee;
-  font-size: 18px;
-  transition: 0.2s;
-  
-  /* make the list items unselectable */
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+cursor: pointer;
+position: relative;
+padding: 12px 8px 12px 40px;
+list-style-type: none;
+background: #eee;
+font-size: 18px;
+transition: 0.2s;
+
+/* make the list items unselectable */
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
 }
 
 /* Set all odd list items to a different color (zebra-stripes) */
 ul li:nth-child(odd) {
-  background: #f9f9f9;
+background: #f9f9f9;
 }
 
 /* Darker background-color on hover */
 ul li:hover {
-  background: #ddd;
+background: #ddd;
 }
 
 /* When clicked on, add a background color and strike out text */
 ul li.checked {
-  background: #888;
-  color: #fff;
-  text-decoration: line-through;
+background: #888;
+color: #fff;
+text-decoration: line-through;
 }
 
 /* Add a "checked" mark when clicked on */
 ul li.checked::before {
-  content: '';
-  position: absolute;
-  border-color: #fff;
-  border-style: solid;
-  border-width: 0 2px 2px 0;
-  top: 10px;
-  left: 16px;
-  transform: rotate(45deg);
-  height: 15px;
-  width: 7px;
+content: '';
+position: absolute;
+border-color: #fff;
+border-style: solid;
+border-width: 0 2px 2px 0;
+top: 10px;
+left: 16px;
+transform: rotate(45deg);
+height: 15px;
+width: 7px;
 }
 
 /* Style the close button */
 .close {
-  position: absolute;
-  right: 0;
-  top: 0;
-  padding: 12px 16px 12px 16px;
+position: absolute;
+right: 0;
+top: 0;
+padding: 12px 16px 12px 16px;
 }
 
 .close:hover {
-  background-color: #f44336;
-  color: white;
+background-color: #f44336;
+color: white;
 }
 
 /* Style the header */
 .header {
-  background-color: #c2b5b4;
-  padding: 30px 40px;
-  color: white;
-  text-align: center;
+background-color: #c2b5b4;
+padding: 30px 40px;
+color: white;
+text-align: center;
 }
 
 /* Clear floats after the header */
 .header:after {
-  content: "";
-  display: table;
-  clear: both;
+content: "";
+display: table;
+clear: both;
 }
 
 /* Style the input */
 input {
+margin: 0;
+border: none;
+border-radius: 0;
+width: 75%;
+padding: 10px;
+float: left;
+font-size: 16px;
+}
+label{
   margin: 0;
-  border: none;
-  border-radius: 0;
-  width: 75%;
-  padding: 10px;
-  float: left;
-  font-size: 16px;
+border: none;
+border-radius: 0;
+width: 75%;
+padding: 10px;
+float: left;
+font-size: 16px;
+
 }
 
 /* Style the "Add" button */
 .addBtn {
-  padding: 15px;
-  width: 25%;
-  background: #d9d9d9;
-  color: #555;
-  float: left;
-  text-align: center;
-  font-size: 16px;
-  cursor: pointer;
-  transition: 0.3s;
-  border-radius: 0;
-  margin-top: 5px;
+padding: 15px;
+width: 25%;
+background: #d9d9d9;
+color: #555;
+float: left;
+text-align: center;
+font-size: 16px;
+cursor: pointer;
+transition: 0.3s;
+border-radius: 0;
+margin-top: 5px;
 }
 
 .addBtn:hover {
-  background-color: #bbb;
+background-color: #bbb;
 }

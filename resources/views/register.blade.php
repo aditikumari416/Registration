@@ -19,7 +19,8 @@
           <h1>{{$title}}</h1>
           {{-- <p>Please fill in this form to create an account.</p> --}}
           <hr>
-          <label for="email"><b>name</b></label>
+          <label for="name"><b>name</b></label>
+          
           <input type="text" placeholder="Enter name" name="name" id="name" value="" required>
       
       
